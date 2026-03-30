@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120">
+  <text x="8" y="14" font-family="Noto Sans KR, sans-serif" font-size="14" font-weight="700" fill="#424242">포커스 표시 — 보임 vs 안 보임</text>
+
+  <!-- BAD -->
+  <path d="M14,30 L22,38 M22,30 L14,38" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  <text x="28" y="38" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#EF4444">outline: none (포커스 제거)</text>
+
+  <rect x="8" y="46" width="244" height="40" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <rect x="28" y="52" width="60" height="28" rx="4" fill="none" stroke="#E0E0E0"/>
+  <text x="58" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#424242" text-anchor="middle">홈</text>
+  <rect x="100" y="52" width="60" height="28" rx="4" fill="none" stroke="#E0E0E0"/>
+  <text x="130" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#424242" text-anchor="middle">소개</text>
+  <rect x="172" y="52" width="60" height="28" rx="4" fill="none" stroke="#E0E0E0"/>
+  <text x="202" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#424242" text-anchor="middle">문의</text>
+
+  <text x="28" y="108" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#757575">어디에 포커스가 있는지 알 수 없음</text>
+
+  <!-- GOOD -->
+  <path d="M277,30 L280,34 L287,26" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="294" y="34" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#22C55E">포커스 표시 유지</text>
+
+  <rect x="268" y="46" width="244" height="40" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <rect x="288" y="52" width="60" height="28" rx="4" fill="none" stroke="#E0E0E0"/>
+  <text x="318" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#424242" text-anchor="middle">홈</text>
+  <rect x="360" y="52" width="60" height="28" rx="4" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <rect x="357" y="49" width="66" height="34" rx="6" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <text x="390" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#2563EB" text-anchor="middle">소개</text>
+  <rect x="432" y="52" width="60" height="28" rx="4" fill="none" stroke="#E0E0E0"/>
+  <text x="462" y="70" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#424242" text-anchor="middle">문의</text>
+
+  <text x="288" y="108" font-family="Noto Sans KR, sans-serif" font-size="12" fill="#757575">"소개"에 포커스 위치 명확</text>
+</svg>

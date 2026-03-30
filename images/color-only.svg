@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="168">
+  <text x="4" y="16" font-family="Noto Sans KR, sans-serif" font-size="14" font-weight="700" fill="#424242">색에만 의존한 정보 전달 — 상태 범례</text>
+
+  <!-- BAD 상태 -->
+  <path d="M10,34 L18,42 M18,34 L10,42" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  <text x="24" y="42" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#EF4444">색만으로 구분한 범례</text>
+
+  <rect x="4" y="50" width="248" height="44" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <circle cx="28" cy="72" r="8" fill="#22C55E"/>
+  <text x="44" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">정상</text>
+  <circle cx="108" cy="72" r="8" fill="#EF4444"/>
+  <text x="124" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">오류</text>
+  <circle cx="184" cy="72" r="8" fill="#EAB308"/>
+  <text x="200" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">경고</text>
+
+  <!-- GOOD 상태 -->
+  <path d="M273,38 L276,42 L283,34" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="290" y="42" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#16A34A">색 + 아이콘 범례</text>
+
+  <rect x="268" y="50" width="248" height="44" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <!-- 정상: 체크 path -->
+  <circle cx="292" cy="72" r="8" fill="#16A34A"/>
+  <path d="M287,72 L290,76 L297,68" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="308" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">정상</text>
+  <!-- 오류: X path -->
+  <circle cx="368" cy="72" r="8" fill="#EF4444"/>
+  <path d="M364,68 L372,76 M372,68 L364,76" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="384" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">오류</text>
+  <!-- 경고: ! path -->
+  <circle cx="440" cy="72" r="8" fill="#D97706"/>
+  <line x1="440" y1="67" x2="440" y2="74" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="440" cy="77" r="1.2" fill="#fff"/>
+  <text x="456" y="76" font-family="Noto Sans KR, sans-serif" font-size="13" fill="#424242">경고</text>
+
+  <!-- BAD 범례 (블록 작게) -->
+  <path d="M10,112 L18,120 M18,112 L10,120" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  <text x="24" y="120" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#EF4444">색만으로 구분한 범례</text>
+
+  <rect x="4" y="128" width="248" height="36" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <rect x="20" y="139" width="24" height="14" rx="2" fill="#2563EB"/>
+  <text x="50" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">매출</text>
+  <rect x="88" y="139" width="24" height="14" rx="2" fill="#EF4444"/>
+  <text x="118" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">비용</text>
+  <rect x="156" y="139" width="24" height="14" rx="2" fill="#22C55E"/>
+  <text x="186" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">이익</text>
+
+  <!-- GOOD 범례 -->
+  <path d="M273,116 L276,120 L283,112" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="290" y="120" font-family="Noto Sans KR, sans-serif" font-size="12" font-weight="600" fill="#16A34A">색 + 패턴 범례</text>
+
+  <rect x="268" y="128" width="248" height="36" rx="6" fill="#fff" stroke="#E0E0E0"/>
+  <rect x="284" y="139" width="12" height="14" rx="2" fill="#2563EB"/>
+  <text x="300" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">매출</text>
+  <rect x="336" y="139" width="12" height="14" rx="2" fill="#EF4444"/>
+  <line x1="338" y1="141" x2="346" y2="151" stroke="#fff" stroke-width="1"/>
+  <line x1="338" y1="151" x2="346" y2="141" stroke="#fff" stroke-width="1"/>
+  <text x="352" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">비용</text>
+  <rect x="388" y="139" width="12" height="14" rx="2" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <text x="404" y="151" font-family="Noto Sans KR, sans-serif" font-size="11" fill="#424242">이익</text>
+</svg>

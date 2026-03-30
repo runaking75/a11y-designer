@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A11y for Designers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">A11y for Designers</div>
+      <h1>디자이너를 위한 접근성 <span class="hl">가이드</span></h1>
+      <p class="hero-sub">시각·색상·UI 설계 — 핵심 가이드 18 + 퀴즈 17</p>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="콘텐츠 탭">
+    <div class="tabs-inner">
+      <button class="tab" role="tab" id="t1" aria-selected="true" aria-controls="p1" tabindex="0">가이드 <span class="tab-c">18</span></button>
+      <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="p2" tabindex="-1">퀴즈 <span class="tab-c">17</span></button>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <!-- 가이드 탭 -->
+    <div class="panel on" role="tabpanel" id="p1" aria-labelledby="t1">
+      <h2 class="section-title">가이드</h2>
+      <div class="section-bar">
+        <p class="section-desc">디자이너가 실무에서 꼭 알아야 하는 접근성 기준 18가지</p>
+        <button class="toggle-all" id="toggleAll" aria-expanded="false">모두 펼치기</button>
+      </div>
+      <div id="thList"></div>
+    </div>
+
+    <!-- 퀴즈 탭 -->
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2">
+      <h2 class="section-title">퀴즈</h2>
+      <div class="section-bar">
+        <p class="section-desc">가이드를 제대로 이해했는지 17문제로 확인해보세요</p>
+      </div>
+      <div class="q-bar">
+        <span class="q-bar-l">Progress</span>
+        <div class="q-track"><div class="q-fill" id="pf"></div></div>
+        <span class="q-sc" id="si">0 / 17</span>
+      </div>
+      <div id="qx"></div>
+      <div class="rc" id="rc">
+        <div class="re" id="re"></div>
+        <div class="rp" id="rp"></div>
+        <div class="rd" id="rdl"></div>
+        <div class="rm" id="rmg"></div>
+        <button class="rb" id="rbtn">다시 풀기</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    A11y for Designers —
+    <a href="https://runaking75.github.io/a11y-playground/">A11y Playground</a> ·
+    <a href="https://runaking75.github.io/a11y-lab/">A11y Lab</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
