@@ -33,10 +33,22 @@ Promise.all([
   fetch('faq.json').then(r => r.json()),
   fetch('quiz.json').then(r => r.json())
 ]).then(([faqData, quizData]) => {
+  updateCounts(faqData.length, quizData.length);
   renderGuide(faqData);
   renderQuiz(quizData);
   initTabs();
 });
+
+// ── 카운트 동적 업데이트 ──
+function updateCounts(faqCount, quizCount) {
+  document.getElementById('heroFaqCount').textContent = faqCount;
+  document.getElementById('heroQuizCount').textContent = quizCount;
+  document.getElementById('tabFaqCount').textContent = faqCount;
+  document.getElementById('tabQuizCount').textContent = quizCount;
+  document.getElementById('sectionFaqCount').textContent = faqCount;
+  document.getElementById('sectionQuizCount').textContent = quizCount;
+  document.getElementById('si').textContent = `0 / ${quizCount}`;
+}
 
 // ── 가이드 렌더링 ──
 function renderGuide(data) {
@@ -282,3 +294,18 @@ function initTabs() {
     });
   });
 }
+
+// ── Top 버튼 ──
+const topBtn = document.getElementById('topBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    topBtn.classList.add('show');
+  } else {
+    topBtn.classList.remove('show');
+  }
+});
+
+topBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

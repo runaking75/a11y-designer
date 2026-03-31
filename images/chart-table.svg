@@ -34,8 +34,8 @@
 
   <!-- Q4 -->
   <rect x="206" y="60" width="14" height="64" fill="#2563EB"/>
-  <rect x="222" y="66" width="14" height="52" fill="#F97316"/>
-  <rect x="238" y="98" width="14" height="20" fill="#8B5CF6"/>
+  <rect x="222" y="76" width="14" height="48" fill="#F97316"/>
+  <rect x="238" y="110" width="14" height="14" fill="#8B5CF6"/>
 
   <!-- X축 -->
   <text x="62" y="132" font-family="Noto Sans KR, sans-serif" font-size="9" fill="#424242" text-anchor="middle">Q1</text>

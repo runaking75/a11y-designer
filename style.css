@@ -131,6 +131,11 @@ footer{max-width:824px;margin:0 auto;text-align:center;padding:40px 24px;font-fa
 footer a{color:var(--ink);text-decoration:underline 2px var(--blue);text-underline-offset:3px}
 footer a:hover{background:var(--yellow)}
 
+.top-btn{position:fixed;bottom:32px;right:32px;width:48px;height:48px;background:var(--ink);color:var(--yellow);border:3px solid var(--ink);font-family:var(--heading);font-size:20px;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 var(--yellow);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:200;display:flex;align-items:center;justify-content:center}
+.top-btn.show{opacity:1;visibility:visible}
+.top-btn:hover{background:var(--yellow);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.top-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
 @media(max-width:640px){
   .hero{padding:44px 16px 40px}
   .hero-inner{padding:0}
@@ -149,4 +154,5 @@ footer a:hover{background:var(--yellow)}
   .hero-pill{padding:6px 14px;font-size:12px}
   .section-bar{flex-direction:column;gap:12px;align-items:flex-start}
   footer{padding:32px 16px}
+  .top-btn{bottom:20px;right:20px;width:44px;height:44px;font-size:18px}
 }
