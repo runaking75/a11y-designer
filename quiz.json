@@ -1,0 +1,212 @@
+[
+  {
+    "type": "choice",
+    "question": "일반 텍스트의 최소 명도 대비와 큰 텍스트의 기준은?",
+    "choices": [
+      "일반 4.5:1 / 큰 텍스트 3:1",
+      "일반 3:1 / 큰 텍스트 2:1",
+      "일반 7:1 / 큰 텍스트 4.5:1",
+      "일반 4.5:1 / 큰 텍스트 4.5:1"
+    ],
+    "answer": 0,
+    "explanation": "일반 텍스트는 4.5:1, 큰 텍스트는 3:1 이상이 필요합니다.",
+    "sc": "1.4.3",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "비텍스트 UI 요소의 최소 명도 대비는?",
+    "choices": [
+      "4.5:1",
+      "3:1",
+      "7:1",
+      "2:1"
+    ],
+    "answer": 1,
+    "explanation": "최소 3:1이 필요합니다.",
+    "sc": "1.4.11",
+    "level": "AA"
+  },
+  {
+    "type": "ox",
+    "question": "필수 입력을 빨간색 테두리로만 구분하면 접근성 위반이다.",
+    "answer": true,
+    "explanation": "색상만으로 정보를 전달해서는 안 됩니다.",
+    "sc": "1.4.1",
+    "level": "A"
+  },
+  {
+    "type": "ox",
+    "question": "비활성(disabled) 버튼은 명도 대비 기준의 예외이다.",
+    "answer": true,
+    "explanation": "비활성 UI는 명도 대비 기준의 예외입니다.",
+    "sc": "1.4.3",
+    "level": "AA"
+  },
+  {
+    "type": "ox",
+    "question": "라이트모드 통과하면 다크모드도 자동 충족된다.",
+    "answer": false,
+    "explanation": "배경색이 다르므로 각각 별도로 검증해야 합니다.",
+    "sc": "1.4.3",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "텍스트 확대 시 콘텐츠 손실 방지를 위해 피해야 하는 것?",
+    "choices": [
+      "min-height",
+      "고정 높이(height: 40px)",
+      "rem 단위",
+      "미디어 쿼리"
+    ],
+    "answer": 1,
+    "explanation": "고정 높이를 사용하면 확대 시 콘텐츠가 잘립니다.",
+    "sc": "1.4.4",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "색상 팔레트에서 색각 이상 사용자를 위해 검증할 것?",
+    "choices": [
+      "채도 차이",
+      "적녹색맹 시뮬레이션",
+      "CMYK 변환",
+      "모니터 캘리브레이션"
+    ],
+    "answer": 1,
+    "explanation": "적녹색맹 시뮬레이션으로 검증해야 합니다.",
+    "sc": "1.4.1",
+    "level": "A"
+  },
+  {
+    "type": "choice",
+    "question": "터치 타겟 최소 크기와 권장 크기는?",
+    "choices": [
+      "최소: 24×24px / 권장: 44×44px",
+      "최소: 44×44px / 권장: 48×48px",
+      "최소: 32×32px / 권장: 44×44px",
+      "최소: 20×20px / 권장: 24×24px"
+    ],
+    "answer": 0,
+    "explanation": "최소 24×24px, 권장 44×44px.",
+    "sc": "2.5.8",
+    "level": "AA"
+  },
+  {
+    "type": "ox",
+    "question": "기본 포커스 표시선을 제거하고 대체 스타일을 제공하지 않는 경우 접근성 위반이다.",
+    "answer": true,
+    "explanation": "포커스는 반드시 시각적으로 표시되어야 합니다.",
+    "sc": "2.4.7",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "포커스 표시선의 올바른 접근성 기준은?",
+    "choices": [
+      "배경색 변경으로 충분",
+      "명도 대비 3:1 이상",
+      "#000000 필수",
+      "4px 이상 필수"
+    ],
+    "answer": 1,
+    "explanation": "3:1 이상 대비를 확보해야 합니다.",
+    "sc": "2.4.7",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "시안에서 명시해야 할 접근성 항목이 아닌 것?",
+    "choices": [
+      "포커스 스타일",
+      "상태별 스타일",
+      "브라우저 리셋 방법",
+      "터치 타겟 영역"
+    ],
+    "answer": 2,
+    "explanation": "브라우저 리셋은 개발 영역입니다.",
+    "sc": "2.4.7",
+    "level": "AA"
+  },
+  {
+    "type": "ox",
+    "question": "1초 3회 이상 번쩍임은 접근성에서 금지이다.",
+    "answer": true,
+    "explanation": "금지됩니다.",
+    "sc": "2.3.1",
+    "level": "A"
+  },
+  {
+    "type": "choice",
+    "question": "리플로우 기준 최소 너비?",
+    "choices": [
+      "480px",
+      "360px",
+      "320px",
+      "240px"
+    ],
+    "answer": 2,
+    "explanation": "320px에서 가로 스크롤 없이 읽을 수 있어야 합니다.",
+    "sc": "1.4.10",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "본문 줄 간격 최소 몇 배?",
+    "choices": [
+      "1.2배",
+      "1.5배",
+      "2.0배",
+      "1.0배"
+    ],
+    "answer": 1,
+    "explanation": "줄 높이(줄 간격)는 글자 크기보다 최소 1.5배 이상이어야 합니다.",
+    "sc": "1.4.12",
+    "level": "AA"
+  },
+  {
+    "type": "choice",
+    "question": "차트 접근성에 반드시 필요한 것?",
+    "choices": [
+      "해상도 높이기",
+      "색상 외 구분 또는 데이터 테이블",
+      "크기 키우기",
+      "애니메이션 추가"
+    ],
+    "answer": 1,
+    "explanation": "패턴, 라벨링, 데이터 테이블을 제공해야 합니다.",
+    "sc": "1.1.1",
+    "level": "A"
+  },
+  {
+    "type": "ox",
+    "question": "스와이프로만 삭제 가능하고 버튼 대안이 없으면 위반이다.",
+    "answer": true,
+    "explanation": "단일 포인터 대안을 제공해야 합니다.",
+    "sc": "2.5.1",
+    "level": "A"
+  },
+  {
+    "type": "choice",
+    "question": "접근성에서 규정하는 본문 폰트 최소 크기는?",
+    "choices": [
+      "12px",
+      "14px",
+      "16px",
+      "규정 없음"
+    ],
+    "answer": 3,
+    "explanation": "접근성에서 폰트 크기 최솟값은 규정하지 않습니다.",
+    "sc": "1.4.4",
+    "level": "AA"
+  },
+  {
+    "type": "ox",
+    "question": "placeholder 텍스트가 있으면 별도 레이블은 불필요하다.",
+    "answer": false,
+    "explanation": "placeholder는 입력 시 사라지므로 별도 레이블이 반드시 필요합니다.",
+    "sc": "1.3.1",
+    "level": "A"
+  }
+]
