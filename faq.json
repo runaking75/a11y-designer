@@ -1,7 +1,7 @@
 [
   {
     "q": "명도 대비 3:1과 4.5:1 기준의 차이",
-    "a": "<div class=\"ap-faq__img-wrap\"><img src=\"images/faq/contrast-ratio.svg\" alt=\"명도 대비 기준 비교\"></div><strong>4.5:1</strong> — 일반 텍스트(18px 미만)의 최소 명도 대비.<br><br><strong>3:1</strong> — 큰 텍스트(18px/14pt 이상의 Bold 텍스트나, 24px/18pt 이상의 일반 텍스트)와 비텍스트 UI 요소에 적용.<br><br><strong>7:1</strong> — 고대비.<br><br>가장 흔한 위반 사례는 placeholder 텍스트, 아이콘의 대비를 확인하지 않는 것이다.<br> placeholder는 일반 텍스트와 동일하게 4.5:1을 충족해야 한다. 단, placeholder의 명도를 너무 높게 설정하면, 사용자가 이미 값이 입력된 것으로 오해할 수 있는 사용성(Usability) 문제가 발생한다. 그러므로 입력 값과는 차별화해야 한다.",
+    "a": "<div class=\"ap-faq__img-wrap\"><img src=\"images/faq/contrast-ratio.svg\" alt=\"명도 대비 기준 비교\"></div><strong>4.5:1</strong> — 일반 텍스트(18px 미만)의 최소 명도 대비.<br><br><strong>3:1</strong> — 큰 텍스트(18px/14pt 이상의 Bold 텍스트나, 24px/18pt 이상의 일반 텍스트)와 비텍스트 UI 요소에 적용.<br><br><strong>7:1</strong> — 고대비.<br><br>가장 흔한 위반 사례는 placeholder 텍스트, 아이콘 버튼의 명도 대비를 확인하지 않는 것이다.<br> placeholder는 일반 텍스트와 동일하게 4.5:1을 충족해야 한다. 단, placeholder의 명도를 너무 높게 설정하면, 사용자가 이미 값이 입력된 것으로 오해할 수 있는 사용성(Usability) 문제가 발생한다. 그러므로 입력 값과는 차별화해야 한다.",
     "tags": [
       "SC 1.4.3",
       "SC 1.4.11",
